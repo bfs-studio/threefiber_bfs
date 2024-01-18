@@ -1,5 +1,6 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useState, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
+
 
 export function Box(props) {
   // If you want to read or modify the properties of a component instance at run time,
@@ -11,6 +12,9 @@ export function Box(props) {
   useEffect(() => {
     //console.log(instanceRef.current)
   })
+
+  // useMemo started
+  //useMemo({})
   //console.log(instanceRef)
 
   // The useState Hook is a React component that allows us to track state between function calls, and provide a way to modify it.
